@@ -1,8 +1,33 @@
-{% extends 'layout.html' %}
-{% block content %}
-<h1>Welcome to the Main Page</h1>
-<a href='/visual'>Visual</a>
-<a href='/auditory'>Auditory</a>
-<a href='/read_write'>Read & Write</a>
-<a href='/kinesthetic'>Kinesthetic</a>
+{% extends 'layout.html' %} {% block content %}
+<h1 class="main-title">ඔබේ ඉගෙනුම් විලාසය සොයා ගන්න</h1>
+<div class="card-container">
+  <a href="/visual" class="card" data-style="visual">
+    <div class="card-inner">
+      <h2>දෘශ්‍ය</h2>
+      <p>දැකීමෙන් හා නැරඹීමෙන් ඉගෙන ගන්න</p>
+      <div class="card-icon">👁️</div>
+    </div>
+  </a>
+  <a href="/auditory" class="card" data-style="auditory">
+    <div class="card-inner">
+      <h2>ශ්‍රවණ</h2>
+      <p>ඇසීමෙන් හා කතා කිරීමෙන් ඉගෙන ගන්න</p>
+      <div class="card-icon">👂</div>
+    </div>
+  </a>
+  <a href="/read_write" class="card" data-style="read-write">
+    <div class="card-inner">
+      <h2>කියවීම සහ ලිවීම</h2>
+      <p>කියවීමෙන් හා ලිවීමෙන් ඉගෙන ගන්න</p>
+      <div class="card-icon">📚</div>
+    </div>
+  </a>
+  <a href="/kinesthetic" class="card" data-style="kinesthetic">
+    <div class="card-inner">
+      <h2>චලන</h2>
+      <p>ක්‍රියා කිරීමෙන් හා ස්පර්ශ කිරීමෙන් ඉගෙන ගන්න</p>
+      <div class="card-icon">🤸</div>
+    </div>
+  </a>
+</div>
 {% endblock %}
