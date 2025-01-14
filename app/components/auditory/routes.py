@@ -1,11 +1,11 @@
 from flask import Blueprint
-from .controller import KinestheticController
+from .controller import AuditoryController
 
-kinesthetic_bp = Blueprint("kinesthetic", __name__)
-controller = KinestheticController()
+auditory_bp = Blueprint("auditory", __name__)
+controller = AuditoryController()
 
 
-@kinesthetic_bp.route("/")
+@auditory_bp.route("/")
 def index():
     return controller.show_home_page()
 
