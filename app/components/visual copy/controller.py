@@ -1,1 +1,0 @@
-# Visual component logic
